@@ -8,7 +8,14 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose'); 
 
 
-const cors = require("cors")
+app.use(
+  cors({
+    origin: [
+      "http://localhost:5173",
+      "https://your-project.vercel.app"
+    ]
+  })
+);
 
 const app = express();
 app.use(cors())
