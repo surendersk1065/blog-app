@@ -15,7 +15,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://your-project.vercel.app"
+      "https://blog-app-frontend-tdh6.vercel.app/"
     ]
   })
 );
