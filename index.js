@@ -15,8 +15,10 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://blog-app-frontend-tdh6.vercel.app/"
-    ]
+      "https://blog-app-frontend-tdh6.vercel.app"
+    ],
+    methods: ["GET", "POST", "PATCH", "PUT", "DELETE", "OPTIONS"],
+    credentials: true
   })
 );
 
